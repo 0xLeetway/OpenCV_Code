@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <!--    配置窗口的基本属性-->
+    <bean id="MyWindowsConfig" class="xyz.taichu.model.entity.MyWindows" scope="singleton">
+        <!-- <property name="IpWindowName" value="雷电模拟器"></property>-->
+        <property name="IpClassName" value="ApplicationFrameInputSinkWindow"></property>
+        <!--        设置窗口的长宽-->
+        <property name="windowLong" value="1262"></property>
+        <property name="windowWide" value="727"></property>
+        <!--        设置窗口的左上角坐标-->
+        <property name="LeftUpX" value="0"></property>
+        <property name="leftUpY" value="0"></property>
+    </bean>
+
+    <!--总共有多少种场景-->
+    <bean id="SceneSupervise" class="xyz.taichu.model.entity.SceneSupervise" scope="prototype">
+        <property name="scaneToal" value="3"></property>
+    </bean>
+
+    <!--    情景1描述-->
+    <bean id="Scene1" class="xyz.taichu.model.entity.Scene" scope="prototype">
+        <!--        情景有多少张图片-->
+        <property name="imgNum" value="1"></property>
+        <!--        与id同名-->
+        <property name="NameID" value="Scene1"></property>
+        <!--        图片路径,如果有则填写路径，如果没有则写null-->
+        <property name="img1" value="E:\java-E\TaiChuEif\src\main\resources\Image\Scene1\mowa.png"></property>
+        <property name="img2" value="null"></property>
+        <property name="img3" value="null"></property>
+        <!--使用鼠标vaule=0；使用键盘操作vaule=1-->
+        <property name="useDevice" value="0"></property>
+        <!--使用鼠标进行什么操作？1,左键;2,右键;3,中键-->
+        <property name="mouseKey" value="1"></property>
+        <!--上述按键中按下多少毫秒？1秒=1000毫秒-->
+        <property name="pressDelay" value="100"></property>
+        <!--        使用第几张图片坐标-->
+        <property name="imgOrder" value="1"></property>
+    </bean>
+
+    <!--    情景2描述-->
+    <bean id="Scene2" class="xyz.taichu.model.entity.Scene" scope="prototype">
+        <!--        情景有多少张图片-->
+        <property name="imgNum" value="1"></property>
+        <!--        与id同名-->
+        <property name="NameID" value="Scene2"></property>
+        <!--        图片路径,如果有则填写路径，如果没有则写null-->
+        <property name="img1" value="E:\java-E\TaiChuEif\src\main\resources\Image\Scene2\Scene1.png"></property>
+        <property name="img2" value="null"></property>
+        <property name="img3" value="null"></property>
+        <!--使用鼠标vaule=0；使用键盘操作vaule=1-->
+        <property name="useDevice" value="0"></property>
+        <!--使用鼠标进行什么操作？1,左键;2,右键;3,中键-->
+        <property name="mouseKey" value="1"></property>
+        <!--上述按键中按下多少毫秒？1秒=1000毫秒-->
+        <property name="pressDelay" value="100"></property>
+        <!--        使用第几张图片坐标-->
+        <property name="imgOrder" value="1"></property>
+    </bean>
+
+    <!--    情景3描述-->
+    <bean id="Scene3" class="xyz.taichu.model.entity.Scene" scope="prototype">
+        <!--        情景有多少张图片-->
+        <property name="imgNum" value="1"></property>
+        <!--        与id同名-->
+        <property name="NameID" value="Scene3"></property>
+        <!--        图片路径,如果有则填写路径，如果没有则写null-->
+        <property name="img1" value="E:\java-E\TaiChuEif\src\main\resources\Image\Scene3\start.png"></property>
+        <property name="img2" value="null"></property>
+        <property name="img3" value="null"></property>
+        <!--使用鼠标vaule=0；使用键盘操作vaule=1-->
+        <property name="useDevice" value="0"></property>
+        <!--使用鼠标进行什么操作？1,左键;2,右键;3,中键-->
+        <property name="mouseKey" value="1"></property>
+        <!--上述按键中按下多少毫秒？1秒=1000毫秒-->
+        <property name="pressDelay" value="100"></property>
+        <!--        使用第几张图片坐标-->
+        <property name="imgOrder" value="1"></property>
+    </bean>
+
+</beans>
