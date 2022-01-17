@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.taichu</groupId>
+    <artifactId>TaiChuEif</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+
+
+        <!--导入JNA,调用WindowsAPI进行操控鼠标键盘-->
+        <!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+        <!-- jna-platform提供一些JNA实用程序 -->
+        <!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna-platform -->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna-platform</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <build>
+        <plugins>
+
+        </plugins>
+    </build>
+
+</project>
